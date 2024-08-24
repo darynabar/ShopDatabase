@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Cities
+public class City
 {
     public int Id { get; set; }
     public string Name { get; set; }
     public int CountryId { get; set; }
+    public Country Country { get; set; }
 }
-public class Shops
+public class Shop
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -18,14 +19,14 @@ public class Shops
     public int CityId { get; set; }
     public int? ParkingArea { get; set; }
 }
-public class Countries
+public class Country
 {
     public int Id { get; set; }
     public string Name { get; set; }
     
 }
 
-public class Workers
+public class Worker
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -39,20 +40,20 @@ public class Workers
     
 }
 
-public class Categories
+public class Category
 {
     public int Id { get; set; }
     public string Name { get; set; }
 
 }
-public class Positions
+public class Position
 {
     public int Id { get; set; }
     public string Name { get; set; }
 
 }
 
-public class Products
+public class Product
 {
     public int Id { get; set; }
     public string Name { get; set; }
